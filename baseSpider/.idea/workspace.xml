@@ -27,6 +27,7 @@
     <SUITE FILE_PATH="coverage/spider$chromdriver.coverage" NAME="chromdriver Coverage Results" MODIFIED="1541148711037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spider$css.coverage" NAME="css选择器 Coverage Results" MODIFIED="1541146614927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spider$.coverage" NAME="电脑周边配件批发网 Coverage Results" MODIFIED="1541238475511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/baseSpider$maoyanSpider.coverage" NAME="maoyanSpider Coverage Results" MODIFIED="1541408804764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spider$_ID.coverage" NAME="古诗文网_ID遍历 Coverage Results" MODIFIED="1540903733435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spider$1__1_.coverage" NAME="1 (1) Coverage Results" MODIFIED="1524487597652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/spider$_.coverage" NAME="格言网_链接遍历 Coverage Results" MODIFIED="1540910531653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -101,26 +102,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="Python Console" value="71" />
           <entry key="html" value="1" />
-          <entry key="py" value="1928" />
+          <entry key="py" value="3861" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="Python" value="1928" />
+          <entry key="Python" value="3929" />
+          <entry key="RegExp" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="py" value="1" />
+          <entry key="py" value="5" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="Python" value="1" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -128,13 +133,29 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/电影/maoyanTop100/maoyanSpider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="111" column="13" lean-forward="true" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+              <folding>
+                <element signature="e#49#60#0" expanded="true" />
+                <marker date="1541409440694" expanded="true" signature="2393:2398" ph="..." />
+                <marker date="1541409440694" expanded="true" signature="2393:2855" ph="..." />
+                <marker date="1541409440694" expanded="true" signature="2909:3449" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -149,8 +170,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/算法/两个字符串相同.py" />
-        <option value="$PROJECT_DIR$/算法/随机获取1000此列表元素并统计次数.py" />
         <option value="$PROJECT_DIR$/算法/重复.py" />
         <option value="$PROJECT_DIR$/算法/k个连续0.py" />
         <option value="$PROJECT_DIR$/算法/两个字符串.py" />
@@ -200,6 +219,8 @@
         <option value="$PROJECT_DIR$/demo/电脑周边配件批发网.py" />
         <option value="$PROJECT_DIR$/demo.html" />
         <option value="$PROJECT_DIR$/pyquery/base.py" />
+        <option value="$PROJECT_DIR$/maoyanTop100.txt" />
+        <option value="$PROJECT_DIR$/电影/maoyanTop100/maoyanSpider.py" />
       </list>
     </option>
   </component>
@@ -210,10 +231,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="857" />
-    <option name="y" value="60" />
-    <option name="width" value="1375" />
-    <option name="height" value="855" />
+    <option name="x" value="110" />
+    <option name="y" value="2" />
+    <option name="width" value="1713" />
+    <option name="height" value="892" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -253,6 +274,12 @@
               <item name="baseSpider" type="462c0819:PsiDirectoryNode" />
               <item name="电影" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="baseSpider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="baseSpider" type="462c0819:PsiDirectoryNode" />
+              <item name="电影" type="462c0819:PsiDirectoryNode" />
+              <item name="maoyanTop100" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -287,7 +314,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.base">
+  <component name="RunManager" selected="Python.maoyanSpider">
     <configuration name="汽车之家" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -580,6 +607,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="maoyanSpider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="spider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/电影/maoyanTop100/maoyanSpider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="spider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -602,43 +651,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testselenium" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="spider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Python36\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:\python爬虫代码\python代码\spider\看文档学爬虫\模拟浏览器\selenium豆瓣登录.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.demo" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.testselenium" />
       <item itemvalue="Python.汽车之家" />
       <item itemvalue="Python.index" />
       <item itemvalue="Python.base" />
+      <item itemvalue="Python.maoyanSpider" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.maoyanSpider" />
         <item itemvalue="Python.base" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.index" />
         <item itemvalue="Python.汽车之家" />
-        <item itemvalue="Python.testselenium" />
       </list>
     </recent_temporary>
   </component>
@@ -656,25 +683,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="686" y="48" width="1100" height="684" extended-state="0" />
+    <frame x="88" y="2" width="1370" height="713" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19769673" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13033536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.83161515" visible="true" weight="0.24682395" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.78878504" weight="0.1615245" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.83161515" weight="0.41206896" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.78878504" weight="0.47586206" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="检验" order="7" sideWeight="0.49710566" weight="0.32982457" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="运行" order="9" sideWeight="0.473125" weight="0.30208334" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.82907665" weight="0.4246824" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.82907665" weight="0.42413792" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.17092338" side_tool="true" weight="0.32833335" />
       <window_info anchor="bottom" id="调试" order="12" weight="0.32979977" />
-      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4942113" weight="0.3338898" />
+      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4942113" weight="0.24310344" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="找到" order="15" weight="0.32979977" />
       <window_info anchor="bottom" id="Database Changes" order="16" show_stripe_button="false" />
@@ -764,24 +792,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/requests/知乎/zhihu_login_requests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/正则.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/查看返回页面的编码.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo.py" />
     <entry file="file://$PROJECT_DIR$/urllib/urllib百度翻译.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-421" />
@@ -943,16 +953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/汽车之家.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
-          <folding>
-            <element signature="e#60#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/urllib/url遍历/案例/格言网_链接遍历.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -1098,6 +1098,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="152" column="22" lean-forward="true" selection-start-line="152" selection-start-column="22" selection-end-line="152" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/汽车之家.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="13" column="128" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="128" />
+          <folding>
+            <element signature="e#60#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maoyanTop100.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/python_venv/spider_env/Lib/site-packages/pymysql/cursors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/python_venv/spider_env/Lib/site-packages/pymysql/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="420" selection-start-line="420" selection-end-line="420" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/电影/maoyanTop100/maoyanSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="111" column="13" lean-forward="true" selection-start-line="111" selection-start-column="13" selection-end-line="111" selection-end-column="13" />
+          <folding>
+            <element signature="e#49#60#0" expanded="true" />
+            <marker date="1541409440694" expanded="true" signature="2393:2398" ph="..." />
+            <marker date="1541409440694" expanded="true" signature="2393:2855" ph="..." />
+            <marker date="1541409440694" expanded="true" signature="2909:3449" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
