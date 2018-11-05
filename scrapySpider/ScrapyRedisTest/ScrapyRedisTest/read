@@ -1,0 +1,37 @@
+参考：
+https://github.com/rmax/scrapy-redis
+
+Usage
+Use the following settings in your project:
+
+# Enables scheduling storing requests queue in redis.
+SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+
+# Ensure all spiders share same duplicates filter through redis.
+DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
+
+# Store scraped item in redis for post-processing.
+ITEM_PIPELINES = {
+    'scrapy_redis.pipelines.RedisPipeline': 300
+}
+
+
+Feeding a Spider from Redis
+The class scrapy_redis.spiders.RedisSpider enables a spider to read the urls from redis. The urls in the redis queue will be processed one after another, if the first request yields more requests, the spider will process those requests before fetching another url from redis.
+
+For example, create a file myspider.py with the code below:
+from scrapy_redis.spiders import RedisSpider
+class MySpider(RedisSpider):
+    name = 'myspider'
+    def parse(self, response):
+        # do stuff
+        pass
+
+
+
+Then:
+run the spider:
+scrapy runspider myspider.py
+
+push urls to redis:
+redis-cli lpush jobbole:start_urls http://blog.jobbole.com/all-posts
