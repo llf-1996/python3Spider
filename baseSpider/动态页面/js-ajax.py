@@ -61,7 +61,8 @@ def downloadJson(url, headers={}, retryTimes=5):
     :return:
     '''
     r = download_inner(url, headers, retryTimes)
-    if r is None: return None
+    if r is None:
+        return None
     return r.json()
 
 

@@ -112,7 +112,7 @@ def save_mysql(my_cursor, content):
     :return:
     '''
     # 执行插入sql语句
-    i_sql = "insert maoyantop100(the_index, image_url, title, actor, the_time, score) " \
+    i_sql = "insert into maoyantop100(the_index, image_url, title, actor, the_time, score) " \
             "values(%s, %s, %s, %s, %s, %s)"
     # print(i_sql)
     try:
