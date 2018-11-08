@@ -1,0 +1,1 @@
+scrapy crawl lpspider --output=liepin.json -s LOG_LEVEL=INFO -s JOBDIR=craws/liepin

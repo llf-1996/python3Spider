@@ -1,0 +1,22 @@
+爬取的猎聘网关于全国python职位的url
+https://www.liepin.com/zhaopin/?sfrom=click-pc_homepage-centre_searchbox-search_new&d_sfrom=search_fp&key=python
+分析url得到：
+https://www.liepin.com/zhaopin/?key=python
+
+
+具体信息url:
+https://www.liepin.com/job/1915681369.shtml?imscid=R000000075&ckid=280cf0e57a483ba8&headckid=280cf0e57a483ba8&pageNo=0&pageIdx0&totalIdx=0&sup=1&siTag=I-7rQ0e90mv8a37po7dV3Q%7EfA9rXquZc5IkJpXC-Ycixw&d_sfrom=search_unknown&d_ckId=742e7f2c54fe91b3c4213fafa6f6b0e9&d_curPage=0&d_pageSize=40&d_headId=742e7f2c54fe91b3c4213fafa6f6b0e9&d_posi=0
+https://www.liepin.com/cjob/859133.shtml
+
+
+下一页：
+id遍历：
+https://www.liepin.com/zhaopin/?key=python&d_pageSize=40&curPage=0
+
+分页链接： /zhaopin...
+
+爬取字段：
+    职位名  公司名  工作地点  薪资  发布时间  职位url 公司url
+数据库表：编号（自增） 职位名  公司名  工作地点  薪资  发布时间  职位url 公司url  爬取时间  数据源
+job_name  job_url  company_name  company_url  work_addr  money  publish_time
+crawled_time  data_from
