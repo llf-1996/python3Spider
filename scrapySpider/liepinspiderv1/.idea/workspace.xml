@@ -56,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/liepinspiderv1/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1056">
-              <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -85,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/liepin.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="2500" lean-forward="true" selection-start-line="2500" selection-end-line="2500" />
+            <state relative-caret-position="46">
+              <caret line="6100" lean-forward="true" selection-start-line="6100" selection-end-line="6100" />
             </state>
           </provider>
         </entry>
@@ -104,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/liepinspiderv1/items.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -139,7 +139,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="156" />
     <option name="y" value="171" />
     <option name="width" value="1667" />
@@ -199,6 +199,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="125" y="137" width="1333" height="631" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18980393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -215,7 +216,7 @@
       <window_info anchor="bottom" id="Console" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.5" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.56626505" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32931727" />
@@ -284,7 +285,7 @@
     <entry file="file://$PROJECT_DIR$/liepinspiderv1/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1056">
-          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -305,7 +306,7 @@
     <entry file="file://$PROJECT_DIR$/liepinspiderv1/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -321,8 +322,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/liepin.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="2500" lean-forward="true" selection-start-line="2500" selection-end-line="2500" />
+        <state relative-caret-position="46">
+          <caret line="6100" lean-forward="true" selection-start-line="6100" selection-end-line="6100" />
         </state>
       </provider>
     </entry>
