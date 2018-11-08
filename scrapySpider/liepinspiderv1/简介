@@ -1,3 +1,8 @@
+爬取猎聘所有职位信息
+
+
++++++++++++++++++++++++++++++++++++++++++
+id遍历：
 爬取的猎聘网关于全国python职位的url
 https://www.liepin.com/zhaopin/?sfrom=click-pc_homepage-centre_searchbox-search_new&d_sfrom=search_fp&key=python
 分析url得到：
@@ -20,3 +25,59 @@ https://www.liepin.com/zhaopin/?key=python&d_pageSize=40&curPage=0
 数据库表：编号（自增） 职位名  公司名  工作地点  薪资  发布时间  职位url 公司url  爬取时间  数据源
 job_name  job_url  company_name  company_url  work_addr  money  publish_time
 crawled_time  data_from
+
+########################################
+目录页URL分析：
+# 智联Python全国搜索结果页搜索URL分析
+# 行业：  industries
+/zhaopin/?init=-1&headckid=3a115fc35e9f5b4b&flushckid=1&fromSearchBtn=2&ckid=3a115fc35e9f5b4b&degradeFlag=0&curPage=2&industryType=industry_01&industries=040&key=python&siTag=I-7rQ0e90mv8a37po7dV3Q%7EfA9rXquZc5IkJpXC-Ycixw&d_sfrom=search_unknown&d_ckId=e9d256f1f20b03200520a45f9380edd6&d_curPage=2&d_pageSize=40&d_headId=e9d256f1f20b03200520a45f9380edd6
+/zhaopin/?init=-1&headckid=3a115fc35e9f5b4b&flushckid=1&fromSearchBtn=2&ckid=3a115fc35e9f5b4b&degradeFlag=0&curPage=2&industryType=industry_01&industries=420&key=python&siTag=I-7rQ0e90mv8a37po7dV3Q%7EfA9rXquZc5IkJpXC-Ycixw&d_sfrom=search_unknown&d_ckId=e9d256f1f20b03200520a45f9380edd6&d_curPage=2&d_pageSize=40&d_headId=e9d256f1f20b03200520a45f9380edd6
+
+
+# 地区：dps
+/zhaopin/?init=-1&headckid=3a115fc35e9f5b4b&flushckid=1&fromSearchBtn=2&dqs=010&ckid=3a115fc35e9f5b4b&degradeFlag=0&curPage=2&key=python&siTag=I-7rQ0e90mv8a37po7dV3Q%7EfA9rXquZc5IkJpXC-Ycixw&d_sfrom=search_unknown&d_ckId=e9d256f1f20b03200520a45f9380edd6&d_curPage=2&d_pageSize=40&d_headId=e9d256f1f20b03200520a45f9380edd6
+
+/zhaopin/?init=-1&headckid=3a115fc35e9f5b4b&flushckid=1&fromSearchBtn=2&dqs=020&ckid=3a115fc35e9f5b4b&degradeFlag=0&curPage=2&key=python&siTag=I-7rQ0e90mv8a37po7dV3Q%7EfA9rXquZc5IkJpXC-Ycixw&d_sfrom=search_unknown&d_ckId=e9d256f1f20b03200520a45f9380edd6&d_curPage=2&d_pageSize=40&d_headId=e9d256f1f20b03200520a45f9380edd6
+
+/zhaopin/?init=-1&headckid=3a115fc35e9f5b4b&flushckid=1&fromSearchBtn=2&dqs=050090&ckid=3a115fc35e9f5b4b&degradeFlag=0&curPage=2&key=python&siTag=I-7rQ0e90mv8a37po7dV3Q%7EfA9rXquZc5IkJpXC-Ycixw&d_sfrom=search_unknown&d_ckId=e9d256f1f20b03200520a45f9380edd6&d_curPage=2&d_pageSize=40&d_headId=e9d256f1f20b03200520a45f9380edd6
+
+
+更多：
+
+# 发布时间  publishtime
+/zhaopin/?init=-1&headckid=2d677305a8023002&flushckid=1&fromSearchBtn=2&compkind=&pubTime=&ckid=57bb713227262249&siTag=1B2M2Y8AsgTpgAmY7PhCfg%7EfA9rXquZc5IkJpXC-Ycixw&d_sfrom=search_unknown&d_ckId=9432864e4eb22c89c79e3d760f17fb5a&d_curPage=0&d_pageSize=40&d_headId=23eb2b21db9f78cebe7359676f2f362d
+
+/zhaopin/?init=-1&headckid=2d677305a8023002&flushckid=1&fromSearchBtn=2&compkind=&pubTime=1&ckid=57bb713227262249&siTag=1B2M2Y8AsgTpgAmY7PhCfg%7EfA9rXquZc5IkJpXC-Ycixw&d_sfrom=search_unknown&d_ckId=9432864e4eb22c89c79e3d760f17fb5a&d_curPage=0&d_pageSize=40&d_headId=23eb2b21db9f78cebe7359676f2f362d
+
+----------
+# 职位类型  jobkind
+/zhaopin/?init=-1&headckid=2d677305a8023002&flushckid=1&fromSearchBtn=2&compkind=&ckid=175bf9896a3b2f7a&jobKind=1&siTag=1B2M2Y8AsgTpgAmY7PhCfg%7ELcZaMc3JJpc5wbEnH1BpYQ&d_sfrom=search_unknown&d_ckId=4d13c79cd771bf9ef191edbe1b86e198&d_curPage=0&d_pageSize=40&d_headId=23eb2b21db9f78cebe7359676f2f362d
+/zhaopin/?init=-1&headckid=2d677305a8023002&flushckid=1&fromSearchBtn=2&compkind=&ckid=175bf9896a3b2f7a&jobKind=2&siTag=1B2M2Y8AsgTpgAmY7PhCfg%7ELcZaMc3JJpc5wbEnH1BpYQ&d_sfrom=search_unknown&d_ckId=4d13c79cd771bf9ef191edbe1b86e198&d_curPage=0&d_pageSize=40&d_headId=23eb2b21db9f78cebe7359676f2f362d
+
+
+-------
+
+# 企业规模 compscale
+/zhaopin/?init=-1&headckid=2d677305a8023002&flushckid=1&fromSearchBtn=2&compkind=&ckid=175bf9896a3b2f7a&jobKind=1&compscale=010&siTag=1B2M2Y8AsgTpgAmY7PhCfg%7ELcZaMc3JJpc5wbEnH1BpYQ&d_sfrom=search_unknown&d_ckId=4d13c79cd771bf9ef191edbe1b86e198&d_curPage=0&d_pageSize=40&d_headId=23eb2b21db9f78cebe7359676f2f362d
+/zhaopin/?init=-1&headckid=2d677305a8023002&flushckid=1&fromSearchBtn=2&compkind=&ckid=175bf9896a3b2f7a&jobKind=1&compscale=030&siTag=1B2M2Y8AsgTpgAmY7PhCfg%7ELcZaMc3JJpc5wbEnH1BpYQ&d_sfrom=search_unknown&d_ckId=4d13c79cd771bf9ef191edbe1b86e198&d_curPage=0&d_pageSize=40&d_headId=23eb2b21db9f78cebe7359676f2f362d
+
+
+
+# 企业性质   compkind
+/zhaopin/?init=-1&headckid=2d677305a8023002&flushckid=1&fromSearchBtn=2&compkind=010&ckid=175bf9896a3b2f7a&jobKind=1&siTag=1B2M2Y8AsgTpgAmY7PhCfg%7ELcZaMc3JJpc5wbEnH1BpYQ&d_sfrom=search_unknown&d_ckId=4d13c79cd771bf9ef191edbe1b86e198&d_curPage=0&d_pageSize=40&d_headId=23eb2b21db9f78cebe7359676f2f362d
+
+/zhaopin/?init=-1&headckid=2d677305a8023002&flushckid=1&fromSearchBtn=2&compkind=030&ckid=175bf9896a3b2f7a&jobKind=1&siTag=1B2M2Y8AsgTpgAmY7PhCfg%7ELcZaMc3JJpc5wbEnH1BpYQ&d_sfrom=search_unknown&d_ckId=4d13c79cd771bf9ef191edbe1b86e198&d_curPage=0&d_pageSize=40&d_headId=23eb2b21db9f78cebe7359676f2f362d
+
+
+# 第1页url  curPage=1
+/zhaopin/?isAnalysis=&init=-1&searchType=1&headckid=8b3c4c516938c402&dqs=&pubTime=&compkind=&fromSearchBtn=2&salary=&sortFlag=15&ckid=8b3c4c516938c402&degradeFlag=0&industryType=&jobKind=&industries=&compscale=&clean_condition=&key=python&siTag=I-7rQ0e90mv8a37po7dV3Q%7EfA9rXquZc5IkJpXC-Ycixw&d_sfrom=search_prime&d_ckId=aab0a75859aeb1712af105adfc7e4e57&d_curPage=0&d_pageSize=40&d_headId=aab0a75859aeb1712af105adfc7e4e57&curPage=1
+# 下一页url  2
+/zhaopin/?isAnalysis=&init=-1&searchType=1&headckid=8b3c4c516938c402&dqs=&pubTime=&compkind=&fromSearchBtn=2&salary=&sortFlag=15&ckid=8b3c4c516938c402&degradeFlag=0&industryType=&jobKind=&industries=&compscale=&clean_condition=&key=python&siTag=I-7rQ0e90mv8a37po7dV3Q%7EfA9rXquZc5IkJpXC-Ycixw&d_sfrom=search_prime&d_ckId=aab0a75859aeb1712af105adfc7e4e57&d_curPage=0&d_pageSize=40&d_headId=aab0a75859aeb1712af105adfc7e4e57&curPage=1
+# 下一页   3
+/zhaopin/?isAnalysis=&dqs=&pubTime=&salary=&industryType=&compscale=&key=python&init=-1&searchType=1&headckid=8b3c4c516938c402&compkind=&fromSearchBtn=2&sortFlag=15&ckid=8b3c4c516938c402&degradeFlag=0&jobKind=&industries=&clean_condition=&siTag=I-7rQ0e90mv8a37po7dV3Q%7EfA9rXquZc5IkJpXC-Ycixw&d_sfrom=search_prime&d_ckId=aab0a75859aeb1712af105adfc7e4e57&d_curPage=1&d_pageSize=40&d_headId=aab0a75859aeb1712af105adfc7e4e57&curPage=2
+
+
+
+
+
+

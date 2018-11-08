@@ -9,9 +9,12 @@ from liepinspiderv1.items import Liepinspiderv1Item
 
 
 class LpspiderSpider(CrawlSpider):
+    '''
+    爬取猎聘所有招聘职位信息
+    '''
     name = 'lpspider'
     allowed_domains = ['www.liepin.com']
-    start_urls = ['https://www.liepin.com/zhaopin/?key=python']
+    start_urls = ['https://www.liepin.com/zhaopin/']
 
     # 爬取时间
     crawled_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # 转换时间格式为字符串
@@ -19,9 +22,11 @@ class LpspiderSpider(CrawlSpider):
 
     rules = (
         # Rule(LinkExtractor(allow=r'/cjob/.*?html', deny=('init', )), callback='parse_item', follow=False),
-        Rule(LinkExtractor(allow=r'/job/.*?html'), callback='parse_item', follow=False),
-        Rule(LinkExtractor(allow=r'/a/.*?html'), callback='parse_item2', follow=False),
-        Rule(LinkExtractor(allow=r'/zhaopin/?.*?key=python.*?', deny=('industries', 'dps', 'salary')), follow=True),
+        Rule(LinkExtractor(allow=r'/job/.*?html'), callback='parse_item', follow=True),
+        Rule(LinkExtractor(allow=r'/a/.*?html'), callback='parse_item2', follow=True),
+        # Rule(LinkExtractor(allow=r'/zhaopin/?.*?key=python.*?', deny=('industries', 'dps', 'salary')), follow=True),
+        # # 只爬取目录页中下一页的链接
+        # Rule(LinkExtractor(allow=r'/zhaopin/.*?dqs=&.*?pubTime=&.*?salary=&.*?industryType=&.*?compscale=&.*?key=python&.*?&compkind=&.*?&jobKind=&.*?industries=&'), follow=True),
     )
 
     def parse_item(self, response):
