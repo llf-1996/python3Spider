@@ -10,4 +10,8 @@
 爬取时间
 链接
 
-scrapy、selector.xpath、txt文件存储
+技术：
+scrapy框架：crawlspider
+selector.xpath
+txt文件存储
+
