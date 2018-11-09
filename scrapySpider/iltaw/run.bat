@@ -1,0 +1,1 @@
+scrapy crawl iltawspider -s JOBDIR=crawl_status/animalworld

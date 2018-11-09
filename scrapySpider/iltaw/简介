@@ -1,0 +1,27 @@
+动物世界：http://www.iltaw.com/animal/all
+爬取字段有中文名、英文名、图片链接、简介四个字段。
+
+---------每一个动物保存一个文件，文件名为动物名。
+
+
+scrapy框架：crawlspider模板
+通过链接遍历得到所有动物信息
+保存到MySQL数据库
+
+re.sub()去除简介中的空白符
+
+
+###### 数据库设计
+# 删表
+DROP TABLE animalworld;
+
+# 建表
+CREATE TABLE animalworld(
+id INT AUTO_INCREMENT PRIMARY KEY COMMENT '数据编号',
+china_name VARCHAR(200) COMMENT '动物中文名',
+english_name VARCHAR(200) COMMENT '动物英文名',
+img_url VARCHAR(200) COMMENT '动物图片链接',
+intro TEXT COMMENT '动物简介'
+)DEFAULT CHARSET 'utf8';
+
+
