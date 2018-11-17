@@ -1,29 +1,13 @@
-class Person:
-    '''
-    person类
-    '''
-    num = 20  # 类属性
+import lxml.html
+import requests
+from fake_useragent import UserAgent
 
-    def __init__(self, name, age):
-        '''
-        初始化
-        :param name: 姓名
-        :param age: 年龄
-        '''
-        self.name = name  # 类属性
-        self.age = age
-
-    def info(self):
-        '''
-        输出信息
-        :return:
-        '''
-        print("name:", self.name)
-        print("age:", self.age)
-        print("类属性num:", self.num)
-
-
-person = Person('tom', 5)
-person.sex = '男'  # 定义实例属性
-print('实例属性：', person.sex)
-person.info()
+ua = UserAgent()
+header = {"User-Agent": ua.random}
+html = requests.get("http://www.baidu.com/", headers=header)
+html = html.content.decode("utf8")
+print(html)
+tree = lxml.html.fromstring(html)
+mnav = tree.cssselect('div#head .mnav')  # 输出文本内容 # area = td.text_content()
+for i in mnav:
+    print(i.text)

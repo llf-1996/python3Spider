@@ -1,6 +1,0 @@
-爬取飞卢小说网所有电子书
-
-
-scrapy框架: crawlspider、xpath
-文件形式保存：以小说名为目录保存
-

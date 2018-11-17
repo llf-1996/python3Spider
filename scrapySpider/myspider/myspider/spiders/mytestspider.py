@@ -30,6 +30,12 @@ class MytestspiderSpider(CrawlSpider):
         print(response.url)
         selector = Selector(response)
         title = selector.xpath('//h4/em/text()').extract()[0]
+        # title1 = selector.xpath('//h4/em/text()')
+        # print('#########################')
+        # print(title1)
+        # print(type(title1))
+        # print(title1[0].extract())
+        # print('#####################')
         address = selector.xpath('//p/span[@class="pr5"]/text()').extract()[0].strip()
         price = selector.xpath('//*[@id="pricePart"]/div[1]/span/text()').extract()[0]
         lease_type = selector.xpath('//*[@id="introduce"]/li[1]/h6/text()').extract()[0]

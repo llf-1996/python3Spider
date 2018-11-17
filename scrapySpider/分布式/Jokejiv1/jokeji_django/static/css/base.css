@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style: none;
+    color: #8d8687;
+}
+
+
+#name-msg, #msg{
+    color: #c7254e;
+    font-size: 12px;
+}
+
+a{
+    color: #8D8D8D;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: #c7254e;
+}
+
+
+
+/*  ---------------页脚-------------  */
+/* 友情链接*/
+.footer-link a{
+    color: #8c8c8c;
+}
+/*  footer  */
+
+.footer{
+    color:#8d8687;
+    font-size: 12px;
+}
+
+/* 提示信息  */
+#msg{
+    color: darkred;
+    font-size: 12px;
+}
+
+
+
+    /*  表格样式 */
+    tr>th,td{
+        text-align: center;
+    }

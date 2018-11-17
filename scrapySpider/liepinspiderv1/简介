@@ -2,6 +2,10 @@
 
 
 +++++++++++++++++++++++++++++++++++++++++
+分页是通过ajax返回的json数据
+通过start_request()进行遍历
+
+
 id遍历：
 爬取的猎聘网关于全国python职位的url
 https://www.liepin.com/zhaopin/?sfrom=click-pc_homepage-centre_searchbox-search_new&d_sfrom=search_fp&key=python

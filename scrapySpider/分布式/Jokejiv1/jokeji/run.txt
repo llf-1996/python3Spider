@@ -1,0 +1,7 @@
+1.启动爬虫：
+scrapy crawl myspider
+
+2.启动Redis，在redis-cli中添加起始url:
+lpush start_urls http://www.jokeji.cn/search.asp?me_page=1
+ps: 清空数据库所有数据：flushdb
+

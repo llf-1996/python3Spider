@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}首页{% endblock %}</title>
+    {% load static %}
+    <!--<link rel="stylesheet" href="/static/js/lib/bootstrap-3.3.7-dist/css/bootstrap.css">-->
+    <link rel="stylesheet" href="{% static 'js/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css' %}">
+    <script src="{% static 'js/lib/jquery2.2.4/jquery-2.2.4.min.js' %}"></script>
+    <script src="{% static 'js/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js' %}"></script>
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+    {% block my_style %}
+
+    {% endblock %}
+
+</head>
+
+<body>
+
+<!--  导航条  navbar-inverse-->
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            {#            <nav class="navbar navbar-default">#}
+            {#                <div class="container-fluid">#}
+            {#                    <div class="navbar-header">#}
+            {#                        <a class="navbar-brand" href="/">#}
+            {#                            <img alt="" src="/static/upload/index/index1.png", title="图标">#}
+            {#                        </a>#}
+            {#                    </div>#}
+            {#                </div>#}
+            {#            </nav>#}
+            <a class="navbar-brand" href="/">
+                {#                <img alt="" src="/static/upload/index/index2.png" title="图标">#}
+                <div class="glyphicon glyphicon-home"></div>
+                笑话集
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">link1<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">link2</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">注册</a></li>
+                <li><a href="#">登录</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+{% block my_body %}
+    <hr>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-info">
+
+                    {% block content %}
+                        <div class="panel-heading">所有用户</div>
+                        <div class="panel-body"></div>
+                    {% endblock %}
+
+                </div>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+{% endblock %}
+
+
+<div class="container">
+    {% block footer-link %}
+        <ul class="list-inline footer-link">
+            <li><a href="http://www.taobao.com">淘宝</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">友情链接</a></li>
+        </ul>
+    {% endblock %}
+
+    {% block footer %}
+        <div class="footer" align="center">
+            <p>Copyright &copy;2007-2018 bct.net All Rights Reserved 增值电信业务经营许可证：豫B2-20110084</p>
+            <p>24小时订购和服务热线：4001-123456</p>
+        </div>
+    {% endblock %}
+</div>
+
+{% block myscript %}
+
+{% endblock %}
+</body>
+</html>
+
