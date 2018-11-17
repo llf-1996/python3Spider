@@ -20,5 +20,5 @@ class Jokeji(models.Model):
         # 设置表名，如果不设置表名为模块名_类名
         db_table = 'jokeji'
         # 对all、filter查询结果排序
-        # ordering = ["-view_num", "-publish_time"]
+        ordering = ["-view_num", "-publish_time"]  # 对于不等长的字符型数字无法比较大小，修改view_num字段为int型
 
