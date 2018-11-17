@@ -51,5 +51,6 @@ def detail(request, id):
     :param g_id:
     :return:
     '''
-    joke = models.Jokeji.objects.get(pk=id)
+    joke = models.Jokeji.objects.get(pk=id).order_by("-view_num")
     return render(request, "jokeji/detail.html", {"joke": joke})
+
