@@ -11,7 +11,7 @@ def list(request):
     :param request:
     :return:
     '''
-    jokes = models.Jokeji.objects.all()[:10]
+    jokes = models.Jokeji.objects.all()[:30]
     return render(request, "jokeji/list.html", {"jokes": jokes})
 
 
