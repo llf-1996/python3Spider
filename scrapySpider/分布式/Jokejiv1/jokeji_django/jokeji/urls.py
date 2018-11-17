@@ -22,7 +22,7 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^list/', views.list, name="list"),
+    url(r'^list/(\d+)', views.list, name="list"),
     url(r'^(?P<id>\d+)/detail/$', views.detail, name="detail"),
     url(r'^$', views.list, name="list"),
 ]

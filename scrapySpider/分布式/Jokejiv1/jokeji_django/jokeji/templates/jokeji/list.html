@@ -28,22 +28,22 @@
                         <th>标题</th>
                         <th>发表时间</th>
                         <th>浏览量</th>
-                        <th>操作TODO</th>
+                        {#                        <th>操作TODO</th>#}
                     </tr>
-                    {% for joke in jokes %}
+                    {% for joke in page.object_list %}
                         <tr>
                             <td>{{ forloop.counter }}</td>
                             <td><a href="{% url 'jokeji:detail' joke.id %}">{{ joke.title }}</a></td>
                             <td>{{ joke.publish_time }}</td>
                             <td>{{ joke.view_num }}</td>
-                            <td>
-                                <a href="#">
-                                    <div class="btn btn-sm btn-danger">修改</div>
-                                </a> |
-                                <a href="#">
-                                    <div class="btn btn-sm btn-danger">删除</div>
-                                </a>
-                            </td>
+                            {#                            <td>#}
+                            {#                                <a href="#">#}
+                            {#                                    <div class="btn btn-sm btn-danger">修改</div>#}
+                            {#                                </a> |#}
+                            {#                                <a href="#">#}
+                            {#                                    <div class="btn btn-sm btn-danger">删除</div>#}
+                            {#                                </a>#}
+                            {#                            </td>#}
                         </tr>
 
                     {% empty %}
@@ -57,14 +57,61 @@
                 </table>
             </div>
         </div>
+        <div class="row" align="center">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    {% if page.has_previous %}
+                        <li>
+                            <a href="{% url 'jokeji:list' 1 %}" aria-label="Previous">首页</a>
+                        </li>
+                    {% endif %}
+
+                    {% if page.has_previous %}
+                        <li>
+                            <a href="{% url 'jokeji:list' page.previous_page_number %}" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% for p in page_list %}
+                        {% if p == page.number %}
+                            <li class="active"><a>{{ p }}</a></li>
+                        {% else %}
+                            <li><a href="{% url 'jokeji:list' p %}">{{ p }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if page.has_next %}
+                        <li>
+                            <a href="{% url 'jokeji:list' page.next_page_number %}">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    {% endif %}
+
+                    {% if page.has_next %}
+                        <li>
+                            <a href="{% url 'jokeji:list' page.paginator.num_pages %}">尾页</a>
+                        </li>
+
+                    {% endif %}
+
+                </ul>
+            </nav>
+
+            <span style="color: #999;">
+                共有数据{{ page.paginator.count }}条；每页{{ pageSize }}条数据；共有{{ page.paginator.num_pages }}页
+            </span>
+        </div>
     </div>
     <!--  笑话列表end   -->
+    <hr>
 {% endblock %}
 
 
 {% block myscript %}
 {% endblock %}
 
-{% block footer-link %}
-{% endblock %}
+{#{% block footer-link %}#}
+{#{% endblock %}#}
 
