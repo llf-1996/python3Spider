@@ -5,18 +5,45 @@
 {% endblock %}
 
 {% block my_style %}
+    <style>
+        .the-search .key-search{
+            width: 400px;
+        }
+    </style>
 
 {% endblock %}
-
-
-{% block banner %}
-{% endblock %}
-
 
 {% block my_body %}
     <hr>
+
+
     <!--  笑话列表start   -->
     <div class="container">
+        <!-- 全文检索start -->
+        <div class="row goods-search">
+
+            <div class="col-md-6 the-search">
+                <div style="margin: 5px 0;">
+                    <form class="form-inline" method='get' action="/search/" target="_blank">
+                        <input type="text" class="form-control key-search" name="q" placeholder="请输入关键字" required>
+                        <input class="form-control btn btn-sm btn-default" type="submit" value="搜索">
+                    </form>
+                </div>
+                <div class="search-tuijian">
+                    <ul class="list-inline">
+                        <li style="color: red">热门搜索：</li>
+                        <li><a href="/search/?q=雷人" target="_blank">雷人</a></li>
+                        <li><a href="/search/?q=恶搞" target="_blank">恶搞</a></li>
+                        <li><a href="/search/?q=经典笑话" target="_blank">经典笑话</a></li>
+                        <li><a href="/search/?q=幽默笑话" target="_blank">幽默笑话</a></li>
+                        <li><a href="/search/?q=搞笑短信" target="_blank">搞笑短信</a></li>
+                        <li><a href="/search/?q=口误" target="_blank">口误</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 全文检索end -->
+
         <div class="row">
             <div class="panel panel-info">
                 <!-- Default panel contents -->

@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 自定义的app
     'jokeji',
+    # 全文检索
+    'haystack',
+    'mysearch',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +129,19 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+
+# 分页信息
+# 每页显示的条数
+PAGESIZE = 30
+
+# 全文检索
+HAYSTACK_CONNECTIONS = {
+    'default': {
+        'ENGINE': 'mysearch.whoosh_cn_backend.WhooshEngine',  # 将来需要修改
+        'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
+    }
+}
+# 分页设置
+HAYSTACK_SEARCH_RESULTS_PER_PAGE = 10
+# 索引生成设置
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'

@@ -12,7 +12,7 @@ class Jokeji(models.Model):
     url = models.CharField(max_length=255, verbose_name="链接")
     content = models.TextField(verbose_name="内容")
     publish_time = models.CharField(max_length=255, verbose_name="发布时间")
-    view_num = models.IntegerField(max_length=20, verbose_name="浏览数")
+    view_num = models.IntegerField(verbose_name="浏览数")
     crawled_time = models.DateTimeField(verbose_name="爬取时间")
     data_from = models.CharField(max_length=255, verbose_name="数据来源")
 

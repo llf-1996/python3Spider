@@ -20,4 +20,5 @@ from django.conf.urls import include
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^jokeji/', include("jokeji.urls", namespace="jokeji")),
+    url(r'^search/', include("haystack.urls")),  # 配置检索的路由
 ]
