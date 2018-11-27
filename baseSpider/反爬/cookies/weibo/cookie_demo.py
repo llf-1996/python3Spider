@@ -210,8 +210,8 @@ class CookiesPool:
 if __name__ == '__main__':
     pool = CookiesPool()
     # 保存一个cookie
-    username = '3414018462@qq.com'
-    password = 'qikuedu9527'
+    username = '*****'
+    password = '****'
     cookies, home_url = pool.gen_cookies(username, password)
     if cookies != None:
         pool.save(username, password, cookies, home_url)
