@@ -91,6 +91,7 @@ class CookiesPool:
                 print('获取cookie....')
                 cookies = self.driver.get_cookies()
                 print('cookie:', cookies)
+                # 登录后的URL
                 home_url = self.driver.current_url
                 return (cookies, home_url)
             except Exception as e:
@@ -137,10 +138,10 @@ class CookiesPool:
             try:
                 dict = {}
                 for cookie in cookies:
-                    print('#######2', cookie)
+                    # print('#######2', cookie)
                     dict[cookie['name']] = cookie['value']
                 cookies = json.dumps(dict)
-                print('cookies:', cookies)
+                print('json格式化cookies:', cookies)
                 strsql = "insert into tbcookies(username, passwd, cookies, home_url) " \
                          "VALUES(%s,%s,%s,%s)"
                 params = (username, passwd, cookies, home_url)
