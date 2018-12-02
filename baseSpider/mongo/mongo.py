@@ -2,8 +2,8 @@
 from pymongo import MongoClient
 client=MongoClient()
 #print(client)
-hello_db=client.hello
-user_collection=hello_db.user
+hello_db=client.hello  # hello数据库对象
+user_collection=hello_db.user  # user集合对象，即user表
 #print(user_collection)
 
 user={

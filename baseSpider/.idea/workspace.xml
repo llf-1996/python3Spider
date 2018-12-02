@@ -103,7 +103,7 @@
     <session id="-1309354852">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.13" value="1" />
@@ -119,7 +119,7 @@
           <entry key="Python Console" value="723" />
           <entry key="dummy" value="3" />
           <entry key="html" value="1" />
-          <entry key="py" value="7687" />
+          <entry key="py" value="7690" />
           <entry key="sql" value="3" />
           <entry key="项目描述" value="5" />
         </counts>
@@ -128,7 +128,7 @@
         <counts>
           <entry key="HTML" value="1" />
           <entry key="PLAIN_TEXT" value="10" />
-          <entry key="Python" value="8407" />
+          <entry key="Python" value="8410" />
           <entry key="RegExp" value="3" />
           <entry key="SQL" value="1" />
         </counts>
@@ -156,57 +156,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="22" lean-forward="true" selection-end-line="118" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo/douyu/dyDanmu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
-              <folding>
-                <element signature="e#166#175#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/视频/basedemo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/beautifulsoup4/bs4_demo.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-432" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/11.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="e#485#500#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -234,7 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/requests/data.py" />
         <option value="$PROJECT_DIR$/requests/知乎/zhihu_login_requests.py" />
         <option value="$PROJECT_DIR$/查看返回页面的编码.py" />
         <option value="$PROJECT_DIR$/urllib/url遍历/myspider.py" />
@@ -285,6 +234,7 @@
         <option value="$PROJECT_DIR$/11.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/demo/douyu/dyTanmu.py" />
+        <option value="$PROJECT_DIR$/demo/douyu/dyDanmu.py" />
       </list>
     </option>
   </component>
@@ -295,9 +245,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="251" />
-    <option name="y" value="44" />
-    <option name="width" value="1643" />
+    <option name="x" value="303" />
+    <option name="y" value="126" />
+    <option name="width" value="1028" />
     <option name="height" value="830" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -336,12 +286,6 @@
               <item name="baseSpider" type="b2602c69:ProjectViewProjectNode" />
               <item name="baseSpider" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baseSpider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baseSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="douyu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="baseSpider" type="b2602c69:ProjectViewProjectNode" />
@@ -867,9 +811,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="198" y="90" width="1643" height="830" extended-state="1" />
+    <frame x="303" y="126" width="1028" height="830" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49591282" visible="true" weight="0.15161087" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49591282" visible="true" weight="0.24793388" />
       <window_info id="Structure" order="1" sideWeight="0.5040872" side_tool="true" weight="0.13703209" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Project Explorer" order="3" />
@@ -1277,11 +1221,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/beautifulsoup4/bs4_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bullet_curtain.jl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1512" />
@@ -1294,20 +1233,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/11.py">
+    <entry file="file://$PROJECT_DIR$/demo/douyu/dyDanmu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="312">
+          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
           <folding>
-            <element signature="e#485#500#0" expanded="true" />
+            <element signature="e#166#175#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/视频/basedemo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1318,12 +1250,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/douyu/dyDanmu.py">
+    <entry file="file://$PROJECT_DIR$/视频/basedemo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+        <state relative-caret-position="240">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beautifulsoup4/bs4_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-432" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
-            <element signature="e#166#175#0" expanded="true" />
+            <element signature="e#485#500#0" expanded="true" />
           </folding>
         </state>
       </provider>
