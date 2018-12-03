@@ -1,5 +1,5 @@
 # python3Spider
-关于python3爬虫的基本示例及项目
+关于python3爬虫的基本示例及项目。
 
 ## baseSpider非框架类爬虫
 请求库urllib、requests；解析库beautifulsoup、lxml、pyquery；selenium的用法和应对反爬的代码示例。
@@ -7,7 +7,7 @@
 ## scrapySpider框架类爬虫
 ### 飞卢小说爬虫：
 项目位置：https://github.com/llf-1996/python3Spider/tree/master/scrapySpider/%E9%A3%9E%E5%8D%A2%E5%B0%8F%E8%AF%B4/faloo
-技术：scrapy框架：crawlspider模板、scrapy的xpath语法、文件存储
+技术：scrapy框架：crawlspider模板、scrapy的xpath语法、文件存储；
 start_url：https://b.faloo.com/f/531576.html
 定义Rule规则匹配本小说的url进行小说的爬取，xpath提取数据,将爬取到的小说统一保存到feilu文件夹下以小说名为文件夹名以章节为文件名保存到本地。
 
@@ -30,18 +30,18 @@ start_url：http://www.jokeji.cn/hot.htm
 项目位置：：https://github.com/llf-1996/python3Spider/tree/master/scrapySpider/liepinspiderv1
 
 **拉钩网爬虫**
-技术：scrapy框架：crawlspider模板、scrapy的xpath语法、mysql异步化保存
-项目位置：：https://github.com/llf-1996/python3Spider/tree/master/scrapySpider/liepinspiderv1
+技术：scrapy框架：crawlspider模板、scrapy的xpath语法、mysql异步化保存；
+项目位置：https://github.com/llf-1996/python3Spider/tree/master/scrapySpider/liepinspiderv1
 
 
 ### 技术文章类网站
 **伯乐在线爬虫**
 start_url：http://blog.jobbole.com/all-posts
-技术：scrapy框架：crawlspider模板、scrapy的xpath语法、同步异步插入MySQL数据库、使用ImagesPipeline自动保存图片
+技术：scrapy框架：crawlspider模板、scrapy的xpath语法、同步异步插入MySQL数据库、使用ImagesPipeline自动保存图片；
 项目位置：https://github.com/llf-1996/python3Spider/tree/master/scrapySpider/four%20week/article
 
 **简书网爬虫**
 start_url：https://www.jianshu.com/c/20f7f4031550?order_by=added_at&page=1
-技术：scrapy框架：crawlspider模板、scrapy的xpath语法、MongoDB数据库
+技术：scrapy框架：crawlspider模板、scrapy的xpath语法、MongoDB数据库；
 项目位置：https://github.com/llf-1996/python3Spider/tree/master/scrapySpider/jianshu-scrapy
 
