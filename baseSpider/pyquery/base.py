@@ -37,8 +37,10 @@ print(doc('li'))  # 标签通过标签名，也可通过#id或.class的方式获
 
 # url初始化
 print('############' * 10)
+print('#####请求百度首页#######')
 
-doc1 = pq(url='http://www.baidu.com')
+doc1 = pq(url='http://www.baidu.com', encoding='utf8')  # encoding指定编码，解决中文乱码
+print(doc1.text())
 print(doc1('head'))
 
 # 文件初始化
