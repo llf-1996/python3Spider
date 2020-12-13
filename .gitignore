@@ -4,6 +4,7 @@
 .idea
 .vscode
 .DS_Store
+__pychche__
 
 *.py[co]
 *.py.swp
